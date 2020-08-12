@@ -1,38 +1,116 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.filterContainer {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+p {     
+  margin-bottom: 0 !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+hr {
+  margin-top: 0 !important;
+}
+
+.box {
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: 500;    
+  background-color: #C5E09B;
+  margin-bottom: 15px;
+  border-radius: 5px;
   text-align: center;
+  border: none;
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box:hover {
+  background-color: #769741;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.filterTitle {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card-img-top{
+  margin-top: 15px;
+  height: 175px;
+  background-color: #f2f2f2;
+}
+
+.card {
+  margin-bottom: 15px;
+}
+
+.missionName {
+  color: rgba(0,0,255,0.6);
+  font-weight: bold;
+}
+
+.dynamicData {
+  font-size: 13px;
+}
+
+.details {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.loadingText {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(224, 24, 24);
+}
+
+@media only screen and (max-width: 800px) {
+  .actualContent {
+    flex-direction: column;
+    margin-top: 15px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .card {
+    width: 20.5rem !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .col-6 {
+    text-align: center;
   }
+
+  .box {
+    padding: 10px 40px;
+    font-size: 16px;
+  }
+
+  .filterTitle {
+    font-size: 18px;
+  }
+
+  .missionName {
+    font-size: 20px;
+  }
+
+  .dynamicData {
+    font-size: 15px;
+  }
+  
+  .details {
+    font-size: 15px;
+  }
+
 }
